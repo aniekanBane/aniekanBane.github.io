@@ -1,0 +1,44 @@
+:root[data-theme="light"] {
+    --text: #010204;
+    --background: #f2fbfd;
+    --primary: #7cccee;
+    --secondary: #b6e3f6;
+    --accent: #1a93c7;
+}
+:root[data-theme="dark"] {
+    --text: #fbfcfe;
+    --background: #020b0d;
+    --primary: #116183;
+    --secondary: #093649;
+    --accent: #38b1e5;
+}
+
+html {font-size: 100%;} /* 16px */
+
+body {
+    font-family: 'Noto Sans Oriya';
+    font-weight: 400;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans Oriya';
+    font-weight: 700;
+}
+
+h1 {font-size: 3.366rem; /* 53.92px */}
+
+h2 {font-size: 2.525rem; /* 40.32px */}
+
+h3 {font-size: 1.894rem; /* 30.24px */}
+
+h4 {font-size: 1.421rem; /* 22.72px */}
+
+h5 {font-size: 1.066rem; /* 17.12px */}
+
+small {font-size: 0.600rem; /* 9.6px */}
+
+.text-primary {
+    color: var(--primary);
+}
