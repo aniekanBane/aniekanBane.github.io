@@ -51,9 +51,13 @@ a > i {
     color: var(--text);
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
     color: var(--accent);
-    border-bottom: 2px solid var(--accent);
+}
+
+.navbar-toggler {
+    color: var(--primary);
+    border: 1px solid var(--accent);
 }
 
 .card.project-box{
