@@ -40,3 +40,39 @@ h4 {font-size: 1.777rem; /* 28.48px */}
 h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
+
+a > i {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.777rem;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: var(--accent);
+}
+
+.navbar-toggler {
+    color: var(--primary);
+    border: 1px solid var(--accent);
+}
+
+.card.project-box{
+    height: 26rem;
+    border: transparent;
+}
+
+.card img {
+    height: 13rem;
+}
+
+.card > .card-body {
+    background-color: var(--primary);
+}
+
+.card > .card-footer {
+    background-color: var(--accent);
+}
