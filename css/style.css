@@ -55,3 +55,20 @@ a > i {
     color: var(--accent);
     border-bottom: 2px solid var(--accent);
 }
+
+.card.project-box{
+    height: 26rem;
+    border: transparent;
+}
+
+.card img {
+    height: 13rem;
+}
+
+.card > .card-body {
+    background-color: var(--primary);
+}
+
+.card > .card-footer {
+    background-color: var(--accent);
+}
