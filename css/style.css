@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=BIZ UDPMincho:700|BIZ UDPMincho:400');
+@import url('https://fonts.googleapis.com/css?family=BIZ UDPMincho:700|BIZ UDPMincho:400&display=swap');
 
 :root[data-theme="light"] {
     --text: #010204;
@@ -67,6 +67,11 @@ a > i {
 
 .card img {
     height: 13rem;
+}
+
+.card img.card-img-top {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 
 .card > .card-body {
