@@ -81,3 +81,7 @@ a > i {
 .card > .card-footer {
     background-color: var(--accent);
 }
+
+.card > .card-footer a {
+    color: #010204;
+}
