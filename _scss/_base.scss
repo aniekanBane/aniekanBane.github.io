@@ -1,0 +1,86 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #000000;
+    --background: #fdf7fb;
+    --primary: #1a0505;
+    --secondary: #d2bcbc;
+    --accent: #bfb0b8;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --background: #080206;
+    --primary: #fae5e5;
+    --secondary: #432d2d;
+    --accent: #4f4048;
+  }
+}
+
+body {
+  font-family: $base-font-family !important;
+  font-weight: $base-font-weight !important;
+  color: var(--text) !important;
+  background-color: var(--background) !important;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "BIZ UDPMincho", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.366rem; /* 53.92px */
+}
+
+h2 {
+  font-size: 2.525rem; /* 40.32px */
+}
+
+h3 {
+  font-size: 1.894rem; /* 30.24px */
+}
+
+h4 {
+  font-size: 1.421rem; /* 22.72px */
+}
+
+h5 {
+  font-size: 1.066rem; /* 17.12px */
+}
+
+small {
+  font-size: 0.6rem; /* 9.6px */
+}
+
+i {
+  color: var(--text);
+}
+
+.navbar-brand {
+  color: var(--text) !important;
+}
+
+.navbar-nav .nav-link {
+  text-transform: lowercase !important;
+  color: var(--text) !important;
+}
+
+.navbar-toggler {
+  color: var(--primary) !important;
+}
+
+.site-footer {
+  min-height: 60px;
+}
+
+footer .social-link {
+  margin-right: 1rem;
+  font-size: 1.421rem;
+}
+
+footer .social-link:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,30 @@
+<header class="site-header">
+    <nav class="navbar navbar-top navbar-expand-lg navbar-fixed">
+        <div class="container">
+            <a class="navbar-brand order-1" href="{{ site.baseurl }}">{{ site.title }}.</a>
+            <button class="navbar-toggler order-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle Navigation">
+                <span><i class="fa-solid fa-bars-staggered" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse order-2" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ site.baseurl }}">&#60;HOME /&#62;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl}}about">&#60;ABOUT ME /&#62;</a>
+                    </li>
+                    <li class="nav-item">
+                        {%- assign medium_blog = site.social.links[3] -%}
+                        <a target="_blank" class="nav-link" href="{{ medium_blog.url }}">&#60;BLOG /&#62;</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="d-none d-sm-inline-block btn btn-white ms-auto me-40 ms-lg-60 me-lg-0 order-2 order-lg-3"
+                href="">contact me</span></a>
+            <!-- <a class="btn btn-link d-sm-none ms-lg-60 me-lg-0 order-2 text-decoration-none" 
+                href="">contact me</a> -->
+        </div>
+    </nav>
+</header>
