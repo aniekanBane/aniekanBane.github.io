@@ -1,0 +1,24 @@
+$font-family: 'Courier New', Courier, monospace;
+$font-weight: 400 !default;
+
+/* Colors */
+$themes: (
+  light: (
+    text: #111213,
+    // bg-primary: #f3f6f7,
+    // bg-secondary: #f0f0f0,
+    bg-window: #e0e0e0,
+    primary: #528fad,
+    secondary: #90c1da,
+    accent: #5bb1dc,
+  ),
+  dark: (
+    text: #ecedee,
+    // bg-primary: #222529,
+    // bg-secondary: #1a1a1a,
+    bg-window: #2a2a2a,
+    primary: #528fad,
+    secondary: #25566f,
+    accent: #2379a4,
+  ),
+);

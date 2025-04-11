@@ -19,38 +19,32 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Aniekan Jr
-tagline: Electronic and Computer Systems Engineer
-description: Portfolio Site
-baseurl: "/" 
-url: https://aniekanjr.dev 
+description: >- 
+  Data Analyst skilled in Power BI, turning data into insights. 
+  Electronic & Computer Systems Engineer. Tech-driven, football lover, and fitness enthusiast.
+baseurl: "/"
+url: "https://aniekanjr.dev"
 
 author:
   name: Aniekan Umanah
   email: umanah.a@yahoo.com
 
-social:
-  name: Aniekan Umanah
-  links:
-    - name: github
-      url: https://github.com/aniekanBane
-    - name: stack-overflow
-      url: https://stackoverflow.com/users/170951111/aniekan
-    - name: linkedin
-      url: https://linkedin.com/in/aniekanjr
-    - name: medium
-      url: https://anumana8.medium.com
+socials:
+  - name: linkedin
+    link: https://linkedin.com/in/aniekanjr
+  - name: certificate
+    link: https://www.credly.com/users/aniekan-umanah-jr
+  - name: github
+    link: https://github.com/aniekanBane
+  - name: stack-overflow
+    link: https://stackoverflow.com/users/170951111/aniekan
+  - name: medium
+    link: https://anumana8.medium.com
 
 # Build settings
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
-
-sass:
-  sourcemap: always
-  style: compressed
-  load_paths:
-    - _scss
-    - ./vendor/bundle/ruby/3.3.0/gems/bootstrap-5.3.2/assets/stylesheets
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,16 +53,16 @@ sass:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-
+#
 exclude:
-  - vendor/
-  - README.md
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules/
+  - README.md
+#   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
