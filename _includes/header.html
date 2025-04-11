@@ -1,0 +1,80 @@
+<style type="text/css">
+  .navbar {
+    border-bottom: 2px solid var(--accent);
+  }
+  .navbar .nav-link {
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--primary);
+    }
+  }
+  .navbar .nav-link.active {
+    border-color: var(--accent);
+    color: var(--primary);
+  }
+  .navbar-toggler {
+    border: none;
+    color: var(--text);
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+</style>
+<header>
+  <nav class="navbar navbar-expand-lg mb-4 py-2 py-lg-3">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">
+        <img
+          src="/assets/favicon.svg"
+          alt="{{ site.title | default: 'Website Logo' }}"
+          width="32"
+          height="32"
+          class="d-inline-block align-text-center"
+        />
+        {{ site.title }}
+      </a>
+      <div class="navbar-right">
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa fa-sun"></i>
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa fa-bars-staggered"></i></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.socials.last.link }}" target="_blank">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

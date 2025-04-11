@@ -1,0 +1,72 @@
+- title: Executive Option Media Ltd
+  technologies:
+    - Hostinger
+  headline: Corporate website created for Executive Option Media Ltd
+  description: >-
+    Developed a professional corporate website for a media company using Hostinger, ensuring a seamless user experience and modern design.
+    Set up domain emails for various departments and users to enhance communication efficiency.
+    Successfully transferred the domain from the previous provider, Squarespace, to Hostinger, ensuring minimal downtime and a smooth transition process.
+    The website features a clean layout, easy navigation, and is optimized for both desktop and mobile devices.
+  category: [Web Development]
+  image: /assets/imgs/eom_webpage.png
+  url: https://executiveoptionsmedia.org
+  year: 2024
+
+- title: The Oversight Magazine
+  technologies:
+    - Hostinger
+    - Wordpress
+  headline: Online content website created for the Oversight Magazine
+  description: >-
+    Developed a dynamic online content platform for The Oversight Magazine using Hostinger and WordPress.
+    The website features a modern design, user-friendly navigation, and optimized performance for an enhanced reading experience.
+  category: [Web Development]
+  image: /assets/imgs/oversight_magazine_page.png
+  url: https://theoversightmagazine.com
+  year: 2023
+
+- title: US Bike Share Analysis
+  technologies:
+    - Pandas
+    - Python
+  headline: A simple python program that perform a series a data analysis on the US bikeshare data
+  description: >-
+    This project is a Python program that performs data analysis on US bikeshare data.
+    It allows users to explore bike share data for three major cities: Chicago, New York City, and Washington, D.C.
+    The program provides insights into bike usage patterns, including the most popular times of day, the most common stations, and user demographics.
+    The project is designed to be user-friendly and interactive, allowing users to filter data based on specific criteria.
+  category: Data Analysis
+  image: /assets/imgs/bike_share_ex.jpeg
+  url: https://github.com/aniekanBane/pdsnd_udacity
+  year: 2023
+
+- title: HOUSEUYAII
+  technologies:
+    - Squarespace
+  headline: E-commerce website created for HOUSEUYAII
+  description: >-
+    Developed an e-commerce website for HOUSEUYAII using Squarespace, focusing on a modern design and user-friendly interface.
+    The site features a seamless shopping experience, showcasing products effectively and ensuring easy navigation.
+    Implemented payment processing and inventory management systems to streamline operations.
+    The website is optimized for mobile devices, ensuring accessibility and responsiveness across all platforms.
+    Additionally, configured email marketing campaigns to engage customers and drive sales.
+  category: Web Development
+  image: /assets/imgs/houseuyaii_landing_page.png
+  url: https://houseuyaii.com
+  year: 2022
+
+- title: Computer Vision for Robotic Arm Control
+  technologies:
+    - coppeliaSim
+    - Matlab
+    - OpenCV
+  headline: Workpiece 3D position estimation algorithm for a robotic arm
+  description: >-
+    This project focused on using computer vision to control a robotic arm for pick-and-place tasks. A vision pipeline was built in MATLAB that detects objects on a conveyor belt, estimates their 3D positions using stereo cameras, and guides a robot to pick them up.
+    The project incorporated transfer learning using pre-trained models: YOLOv2 for object detection and DeepLab v3+ for pixel-level segmentation — both achieved over 95% accuracy. Depth estimation was done through feature matching between stereo images, with a position error of just 7.94 mm.
+    The system was tested in a simulation environment, where a 6-DOF robotic arm successfully detected, picked, and placed objects at different positions — showing how computer vision can enable smart, flexible robot control.
+  category: Computer Vision, Deep learning
+  image: /assets/imgs/cv_robotics_pipeline.png
+  doc: /assets/docs/cv_robotics_pipeline.pdf
+  url:
+  year: 2021
