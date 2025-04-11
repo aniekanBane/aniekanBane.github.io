@@ -1,0 +1,14 @@
+- title: .NET
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg
+- title: Python
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg
+- title: C/C++
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg
+- title: Postgres SQL
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg
+- title: Docker
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg
+- title: Azure
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg
+- title: Google Cloud
+  badge: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg
