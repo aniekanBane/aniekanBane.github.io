@@ -3,62 +3,7 @@ layout: default
 permalink: /
 ---
 
-<style type="text/css">
-  .profile-picture {
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    animation: pulse 3s infinite;
-    border: 4px solid var(--accent);
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.3);
-  }
 
-  .skill-badge {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    background-color: var(--bs-secondary-bg);
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 225, 0.3);
-    }
-  }
-
-  .skill-badge img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .dot {
-    height: 12px;
-    width: 12px;
-    background-color: #ff605c;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 6px;
-  }
-
-  .dot:nth-child(2) {
-    background-color: #ffbd44;
-  }
-
-  .dot:nth-child(3) {
-    background-color: #00ca4e;
-  }
-
-  .card .card-img-top {
-    height: 13rem;
-    aspect-ratio: 16/9;
-  }
-  .modal-body img {
-    border-top: 2px solid var(--accent);
-    border-bottom: 2px solid var(--accent);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-</style>
 <div class="container">
   <section id="profile">
     <img
@@ -122,31 +67,8 @@ permalink: /
             <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">{{ project.headline }}</p>
             {%- if project.description -%}
-            {%- assign project_id = project.headline | replace: ' ', '' -%}
+            {%- assign project_id = project.title | slugify -%}
             <a class="card-link btn btn-info" data-bs-toggle="modal" data-bs-target="#{{ project_id }}">Details</a>
-            <div class="modal fade" tabindex="-1" id="{{ project_id }}" aria-labelledby="{{ project_id }}Label" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5>{{ project.title }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>{{ project.headline }}</p>
-                    <img src="{{ project.image }}" class="img-fluid mb-3" alt="{{ project.title }}">
-                    <p style="text-align: justify;">{{ project.description }}</p>
-                  </div>
-                  <div class="modal-footer">
-                  {%- if project.doc -%}
-                    <a href="{{ project.doc }}" target="_blank" class="card-link btn btn-info">View Doc</a>
-                  {%- endif -%}
-                  {%- if project.url -%}
-                    <a href="{{ project.url }}" target="_blank" class="card-link btn btn-info">View Site</a>
-                  {%- endif -%}
-                  </div>
-                </div>
-              </div>
-            </div>
             {%- endif -%}
           </div>
           <div class="card-footer text-body-secondary">
@@ -156,6 +78,36 @@ permalink: /
       </div>
       {%- endfor -%}
     </div>
+
+    <!-- Modals (Rendered outside the cards to prevent stacking context issues with backdrop-filter) -->
+    {%- for project in projects -%}
+      {%- if project.description -%}
+      {%- assign project_id = project.title | slugify -%}
+      <div class="modal fade" tabindex="-1" id="{{ project_id }}" aria-labelledby="{{ project_id }}Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>{{ project.title }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>{{ project.headline }}</p>
+              <img src="{{ project.image }}" class="img-fluid mb-3" alt="{{ project.title }}">
+              <p style="text-align: justify;">{{ project.description }}</p>
+            </div>
+            <div class="modal-footer">
+            {%- if project.doc -%}
+              <a href="{{ project.doc }}" target="_blank" class="card-link btn btn-info">View Doc</a>
+            {%- endif -%}
+            {%- if project.url -%}
+              <a href="{{ project.url }}" target="_blank" class="card-link btn btn-info">View Site</a>
+            {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+    {%- endfor -%}
   </section>
   <section id="certs"></section>
 </div>
